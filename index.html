@@ -24,6 +24,9 @@
   </head>
   <body>
     <!--=============== LOADER ===============-->
+    <div class="load" id="load">
+      <img src="assets/img/loadcoffee.gif" alt="" class="load__gif" />
+    </div>
 
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
@@ -36,7 +39,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#products" class="nav__link">Products</a>
@@ -113,7 +116,7 @@
           </div>
 
           <div class="specialty__category">
-            <div class="specialty__group">
+            <div class="specialty__group specialty__line">
               <img
                 src="assets/img/specialty1.png"
                 alt=""
@@ -126,7 +129,7 @@
               </p>
             </div>
 
-            <div class="specialty__group">
+            <div class="specialty__group specialty__line">
               <img
                 src="assets/img/specialty2.png"
                 alt=""
@@ -505,9 +508,90 @@
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Coffee.</h1>
+
+        <div class="footer__content grid">
+          <div class="footerr__data">
+            <p class="footer__description">Subscribe to our newsletter</p>
+
+            <div class="footer__newsletter">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="footer__input"
+              />
+              <button class="footer__button">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Address</h2>
+            <p class="footer__information">
+              9876 Hacienda Av. <br />
+              Lima, La Libertad 123, Perú
+              <img
+                src="assets/img/footerflag.png"
+                alt=""
+                class="footer__flag"
+              />
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Contact</h2>
+            <p class="footer__information">
+              +987654321 <br />
+              coffee@email.com
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Office</h2>
+            <p class="footer__information">
+              Monday - Saturday <br />
+              9AM - 10PM
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </ul>
+
+          <span class="footer__copy"> &#169; Aruna. All rigths reserved </span>
+        </div>
+      </div>
+    </footer>
 
     <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
